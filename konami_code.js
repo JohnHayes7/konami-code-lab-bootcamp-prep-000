@@ -19,7 +19,7 @@ function init() {
      const key=e.key;
      console.log(key);
    if (key === codes[index]){
-     index++
+     index++;
     if (index === codes.length){
      alert('Congrats you entered the Konami code');
      index=0;
