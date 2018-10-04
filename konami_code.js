@@ -10,23 +10,19 @@ const codes = [
   "b",
   "a"
 ];
-
 function init() {
-  let index = 0;
-  
-  document.body.addEventListener('keydown', function(e){
-    const key = e.key;
+  let idx = 0
+
+  document.body.addEventListener("keydown", (e) => {
+    const key = e.key
     
-    if (key === codes[index]){
-      index++;
-      
-      if (index === codes.length){
-        window.alert('Congrats you entered the Konami code');
-        index = 0;
-      }
-    }else{
-      index = 0;
+    idx = (codes[idx] === key) ? ++idx : 0
+    
+    if (idx === codes.length) {
+      window.alert("Hurray!");
+      idx = 0
     }
+    
   });
 }
 
