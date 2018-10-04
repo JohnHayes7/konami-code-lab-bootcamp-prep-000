@@ -24,7 +24,7 @@ function init() {
     }
     
     if (index === codes.length){
-      alert('Congrats you entered the Konami code');
+      window.alert('Congrats you entered the Konami code');
       index = 0;
     }
   });
