@@ -19,13 +19,13 @@ function init() {
     
     if (key === codes[index]){
       index++;
-      
-      if (index === codes.length){
-        window.alert('Congrats you entered the Konami code');
-        index = 0;
-      }
     }else{
       index = 0;
     }
+    
+    if (index === codes.length){
+        window.alert('Congrats you entered the Konami code');
+        index = 0;
+      }
   });
 }
