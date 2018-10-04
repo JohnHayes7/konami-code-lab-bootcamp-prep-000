@@ -11,11 +11,9 @@ const codes = [
   "a"
 ];
 
-
-
 function init() {
   let index = 0;
-   document.body.addEventListener('keyDown', function keyDownHandler(e){
+  document.body.addEventListener('keyDown', function keyDownHandler(e){
      const key=e.key;
      console.log(key);
    if (key === codes[index]){
