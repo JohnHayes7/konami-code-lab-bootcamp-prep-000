@@ -23,10 +23,10 @@ function init() {
     if (index === codes.length){
      alert('Congrats you entered the Konami code');
      index=0;
+    }
    }else{
      index=0;
      }
-   }
   });
 }
 
