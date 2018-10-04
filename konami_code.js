@@ -17,6 +17,8 @@ function init() {
   document.body.addEventListener('keydown', function(e){
     const key = e.key;
     
+    key === codes[index] ? index
+    
     if (key === codes[index]){
       index++;
     }else{
@@ -24,8 +26,8 @@ function init() {
     }
     
     if (index === codes.length){
-        window.alert('Congrats you entered the Konami code');
-        index = 0;
-      }
+      window.alert('Congrats you entered the Konami code');
+      index = 0;
+    }
   });
 }
