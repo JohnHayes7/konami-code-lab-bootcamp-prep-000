@@ -10,7 +10,6 @@ const codes = [
   "b",
   "a"
 ];
-
 function init() {
   let idx = 0
 
@@ -26,3 +25,5 @@ function init() {
     
   });
 }
+
+init()
